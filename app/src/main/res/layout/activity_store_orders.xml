@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".StoreOrdersController">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="97sp"
+        android:layout_height="18sp"
+        android:text="Order Number"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/orderSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/orderSpinner"
+        app:layout_constraintTop_toTopOf="@+id/orderSpinner" />
+
+    <TextView
+        android:id="@+id/totalOrderPrice"
+        android:layout_width="97sp"
+        android:layout_height="18sp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/ordersListView"
+        android:layout_width="293sp"
+        android:layout_height="363sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="258sp"
+        android:layout_height="51sp"
+        android:layout_marginBottom="56sp"
+        android:onClick="cancelOrder"
+        android:text="Cancel Chosen Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/orderSpinner"
+        android:layout_width="136sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="97sp"
+        android:layout_height="18sp"
+        android:layout_marginTop="24sp"
+        android:text="Total Amount"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>

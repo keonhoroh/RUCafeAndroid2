@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:onClick="placeOrder"
+    tools:context=".OrderingBasketController">
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/taxAmount"
+        app:layout_constraintStart_toStartOf="@+id/taxAmount"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/subTotal"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="307sp"
+        android:layout_height="348sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="269sp"
+        android:layout_height="63sp"
+        android:layout_marginBottom="24sp"
+        android:text="Place Order"
+        android:onClick="placeOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="Total: "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="Tax: "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64sp"
+        android:text="Subtotal: "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taxAmount"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/subTotal"
+        app:layout_constraintStart_toStartOf="@+id/subTotal"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

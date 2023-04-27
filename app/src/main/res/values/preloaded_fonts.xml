@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/acme</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/almendra_display</item>
+        <item>@font/amaranth</item>
+        <item>@font/archivo_black</item>
+        <item>@font/asset</item>
+        <item>@font/baloo_bhai</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/bevan</item>
+        <item>@font/cafe</item>
+        <item>@font/dela_gothic_one</item>
+        <item>@font/fontdiner_swanky</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/holtwood_one_sc</item>
+        <item>@font/jacques_francois_shadow</item>
+        <item>@font/kavoon</item>
+        <item>@font/notable</item>
+        <item>@font/oswald_bold</item>
+        <item>@font/oswald_extralight</item>
+        <item>@font/poller_one</item>
+        <item>@font/rosario_bold</item>
+        <item>@font/sancreek</item>
+        <item>@font/secular_one</item>
+        <item>@font/titan_one</item>
+        <item>@font/unlock</item>
+    </array>
+</resources>
